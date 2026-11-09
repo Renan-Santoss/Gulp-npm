@@ -1,0 +1,2 @@
+console.log(moment().format());var img=document.querySelector(".modal-img");function animaImg(){img.classList.contains("active")?img.classList.remove("active"):img.classList.add("active")}img.addEventListener("click",animaImg);
+var modalBtn=document.querySelector(".abrir-modal"),modal=document.querySelector(".modal");function activeModal(a){a.preventDefault(),modal.classList.contains("active")?(modal.classList.remove("active"),modalBtn.innerText="Abrir Modal"):(modal.classList.add("active"),modalBtn.innerText="Fechar Modal")}modalBtn.addEventListener("click",activeModal);
